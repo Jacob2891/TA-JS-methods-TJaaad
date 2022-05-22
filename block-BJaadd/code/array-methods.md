@@ -39,6 +39,7 @@ Example:
 5. `indexOf`
 6. `lastIndexOf`
 7. `includes`
+
 8. `reverse`
 9. `every`
 10. `shift`
