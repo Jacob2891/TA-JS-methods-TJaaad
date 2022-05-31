@@ -13,14 +13,15 @@ let persons = [
   { name: 'Arya', grade: 14, sex: 'F' },
 ];
 
-// Create an array peopleName and store value of sex key from persons array
-
+// Create an array peopleName and store value of name key from persons array
+let peopleName = persons.map((blew) => blew.name);
 // Create an array peopleGrade and store the value of grade key from persons array
-
+let peopleGrade = persons.map((blew) => blew.grade);
 // Create an array peopleSex and store the value of sex key from persons array
-
+let peopleSex = persons.map((blew) => blew.sex);
 // Log the filtered named of people in peopleName that starts with 'J' or 'P'
-
+peopleName.filter((fil) => fil.startsWith(`J`));
+peopleName.filter((fil) => fil.startsWith(`P`));
 // Log the length of filtered named of people in peopleName that starts with 'A' and 'C'
 
 // Log all the filtered male ('M') in persons array
