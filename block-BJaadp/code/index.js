@@ -16,18 +16,23 @@ let persons = [
 // NOTE: Use reduce method whereever you can to solve this exercise:
 
 // Find the average grade
-
+let grades = persons.map(pup => pup.grade);
+let AvgGrades = grades.reduce((Acc,Cv) => Acc+Cv) / grades.length;
 // Find the average grade of male
-
+let maleGrade = male.map(pup => pup.grade)
+let avgMaleGrade = maleGrade.reduce((Acc,Cv) => Acc+Cv) / maleGrade.length
 // Find the average grade of female
-
+let femaleGrade = female.map(pup => pup.grade);
+let avgFemaleGrade = femaleGrade.reduce((Acc,Cv) => Acc+Cv) / femaleGrade.length
 // Find the highest grade
-
+[...grades].sort((a,b)=> a-b).pop()
 // Find the highest grade in male
-
+[...maleGrade].sort((a,b)=> a-b).pop();
 // Find the highest grade in female
-
+[...femaleGrade].sort((a,b)=> a-b).pop();
 // Find the highest grade for people whose name starts with 'J' or 'P'
+let JP = persons.filter((nam) => nam.name.startsWith(`J`) || nam.name.startsWith(`P`) ) 
+let JPHigh = [...JP].map(deet => deet.grade).sort((a,b) => a-b).pop()
 
 const fruitBasket = [
   'banana',
@@ -52,6 +57,11 @@ Output:
 {banana: 2, cherry: 3, orange: 3, apple: 2, fig: 1}
 */
 
+function fruName (array,fruit) {
+  let final = array.filter(fru => fru === fruit)   
+  let fruitsObj = `${fruit} : ${final.length}` 
+    return fruitsObj 
+      }       
 /* 
 
 Use the fruitBasket array to create an array of array. Each array will contain two values name of fruit and number of times
@@ -130,3 +140,8 @@ let pipeline2 = [
 ];
 
 // Find the output using pipeline2 the initial value if 8
+
+let fruits = [`apple`,`orange`,`apple`,`orange`,`pear`,`banana`,`pear`,`banana`]
+let fruitsObj ={};
+
+let fruitsName = fruits.forEach(fruit => )
